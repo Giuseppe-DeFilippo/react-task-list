@@ -6,13 +6,11 @@ function ElementsArrayComponents() {
         .map((taskDaRidurre) => {
             return (
                 <>
-                    <li>{taskDaRidurre.title}</li>
+                    <li className="fw-bold">{taskDaRidurre.title}</li>
                     <li>{taskDaRidurre.priority}</li>
                     <li>{taskDaRidurre.estimatedTime}</li>
                 </>
             )
-
-
         })
     return SearchTitle;
 
