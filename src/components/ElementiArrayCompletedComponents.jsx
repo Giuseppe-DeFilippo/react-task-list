@@ -3,9 +3,9 @@ function elementiArrayCompleted() {
     const elementiCompleted = tasks.filter((element) => element.state === "completed").map((elemento) => {
         return (
             <>
-                <li className="fw-bold">{elemento.title}</li>
-                <li>{elemento.priority}</li>
-                <li>{elemento.estimatedTime}</li>
+                <li className="fw-bold">{elemento.title}<span className="badge  p-2 colorOrange">{elemento.state}</span></li>
+                <li><span>priority: </span>{elemento.priority}</li>
+                <li><span>Est. time </span>{elemento.estimatedTime}</li>
             </>
         )
     })

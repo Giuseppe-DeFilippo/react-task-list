@@ -6,9 +6,10 @@ function ElementsArrayComponents() {
         .map((taskDaRidurre) => {
             return (
                 <>
-                    <li className="fw-bold">{taskDaRidurre.title}</li>
-                    <li>{taskDaRidurre.priority}</li>
-                    <li>{taskDaRidurre.estimatedTime}</li>
+
+                    <li className="fw-bold">{taskDaRidurre.title}<span className="badge  p-2 colorOrange">{taskDaRidurre.state}</span></li>
+                    <li><span>priority: </span>{taskDaRidurre.priority}</li>
+                    <li><span>Est. time </span>{taskDaRidurre.estimatedTime}</li>
                 </>
             )
         })
