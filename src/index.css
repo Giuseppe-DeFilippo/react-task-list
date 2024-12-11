@@ -10,3 +10,7 @@ ul {
 .backgroundgreen {
     background-color: #7FFFD3;
 }
+
+.borderTop {
+    border-top: solid 1px grey;
+}

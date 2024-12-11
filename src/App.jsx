@@ -11,11 +11,10 @@ function App() {
   return (
     <>
       <div className="">
-        <h1 className="p-2 backgroundgreen">task Manager</h1>
-        <h3 className="">current task(4)</h3>
+        <h1 className="backgroundgreen p-2"><span className="m-3">task Manager</span></h1>
+        <h3 className="ms-4">Current Task(4)</h3>
         <ul className="">{ElementsArrayComponents()}</ul>
-        <hr className="" />
-        <h3 className="">Completed Task(6)</h3>
+        <h3 className="ms-4 borderTop">Completed Task(6)</h3>
         <ul className="">{ElementiArrayCompletedComponents()}</ul>
       </div>
     </>
